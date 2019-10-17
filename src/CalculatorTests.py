@@ -23,6 +23,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, 0)
 
 
-
 if __name__ == '__main__':
     unittest.main()
