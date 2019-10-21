@@ -14,11 +14,11 @@ def division(a, b):
     c = a / b
     return c
 
-def square(a, b):
+def square(a):
     c = a**2
     return c
 
-def square_root(a, b):
+def square_root(a):
     c = a**.5
     return c
 
@@ -44,10 +44,10 @@ class Calculator:
         self.result = division(a, b)
         return self.result
 
-    def square(self, a, b):
-        self.result = square(a, b)
+    def square(self, a):
+        self.result = square(a)
         return self.result
 
-    def square_root(self, a, b):
-        self.result = square_root(a, b)
+    def square_root(self, a):
+        self.result = square_root(a)
         return self.result
