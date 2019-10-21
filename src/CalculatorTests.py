@@ -18,6 +18,21 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.subtract(1, 1), 0)
         self.assertEqual(self.calculator.result, 0)
 
+    def test_multiplication(self):
+        self.assertEqual(self.calculator.multiplication(1, 1), 0)
+        self.assertEqual(self.calculator.result, 0)
+
+    def test_division(self):
+        self.assertEqual(self.calculator.division(1, 1), 0)
+        self.assertEqual(self.calculator.result, 0)
+
+    def test_square(self):
+        self.assertEqual(self.calculator.square(1, 1), 0)
+        self.assertEqual(self.calculator.result, 0)
+
+    def test_square_root(self):
+        self.assertEqual(self.calculator.square_root(1, 1), 0)
+        self.assertEqual(self.calculator.result, 0)
 
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)
