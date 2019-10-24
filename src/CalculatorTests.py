@@ -29,16 +29,22 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_division(self):
-        self.assertEqual(self.calculator.division(3, 3), 1)
-        self.assertEqual(self.calculator.result, 1)
+        test_data = CsvReader('/test/Unit Test Division.csv').data
+        for row in test_data:
+        self.assertEqual(self.calculator.division(row['Value 1'], row['Value 2']), int(row['Result']))
+        self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_square(self):
-        self.assertEqual(self.calculator.square(3), 9)
-        self.assertEqual(self.calculator.result, 9)
+        test_data = CsvReader('/test/Unit Test Square.csv').data
+        for row in test_data:
+        self.assertEqual(self.calculator.squire(row['Value 1']), int(row['Result']))
+        self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_square_root(self):
-        self.assertEqual(self.calculator.square_root(4), 2)
-        self.assertEqual(self.calculator.result, 2)
+        test_data = CsvReader('/test/Unit Test Square Root.csv').data
+        for row in test_data:
+        self.assertEqual(self.calculator.squire_root(row['Value 1']), int(row['Result']))
+        self.assertEqual(self.calculator.result, int(row['Result']))
 
     def test_results_property(self):
         self.assertEqual(self.calculator.result, 0)

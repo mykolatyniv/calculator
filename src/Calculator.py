@@ -34,10 +34,6 @@ def square_root(a):
     c = a**.5
     return c
 
-def mean(data):
-    mean = data
-    return mean
-
 class Calculator:
     result = 0
 
@@ -74,6 +70,3 @@ class Calculator:
         def __init__(self, data_file):
             self.data = CsvReader(data_file)
             pass
-
-        def mean(self):
-            mean(self.data)
