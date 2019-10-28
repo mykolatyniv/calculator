@@ -1,5 +1,3 @@
-from CsvReader import *
-
 def addition(a, b):
     a = int(a)
     b = int(b)
@@ -63,10 +61,3 @@ class Calculator:
     def square_root(self, a):
         self.result = square_root(a)
         return self.result
-
-    class CSVStats(Calculator):
-        data = []
-
-        def __init__(self, data_file):
-            self.data = CsvReader(data_file)
-            pass
